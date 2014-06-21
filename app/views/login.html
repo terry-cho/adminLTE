@@ -1,0 +1,37 @@
+        <section class="content-header">
+            <h1>
+                Login
+            </h1>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" style="margin:65px auto;">
+                    <div class="modal-content">
+                        <div class="modal-body" style="padding:0">
+                            <div class="form-box" id="login-box">
+                                <div class="header">Sign In</div>
+                                <form ng-submit="login()">
+                                    <div class="body bg-gray">
+                                        <div class="form-group">
+                                            <input type="text" data-ng-model="username" name="username" class="form-control" placeholder="User ID"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" data-ng-model="password" name="password" class="form-control" placeholder="Password"/>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <button type="submit" class="btn bg-olive btn-block">Sign me in</button>
+
+                                        <p><a href="#">I forgot my password</a></p>
+
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </section><!-- /.content -->
